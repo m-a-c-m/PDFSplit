@@ -1,6 +1,6 @@
-# ✂️ Dividir PDF Online Gratis — Split PDF por Páginas
+# PDF Split — Free Online Tool
 
-**Free PDF Split tool.** Divide a PDF file in 3 modes: extract a custom page range into one PDF, split into equal chunks of N pages, or export each page as an individual PDF file. No sign-up, no ads, 100% client-side.
+**PDF Split.** Split a PDF by page range, every N pages or page by page. No sign-up. No sign-up, no ads, 100% client-side.
 
 🌐 **Demo en vivo / Live demo:** [miguelacm.es/tools/pdf-split](https://miguelacm.es/tools/pdf-split)
 
@@ -13,15 +13,9 @@
 
 ## ✨ Features
 
-- ✂️ **3 modos de división / 3 split modes:**
-  - **Rango de páginas / Page range:** Extract any pages into one PDF (e.g. `1-3, 5, 7-9`)
-  - **Cada N páginas / Every N pages:** Split into equal chunks — `Math.ceil(pages/N)` files
-  - **Página por página / Page by page:** One PDF per selected page
-- 📊 **Detección automática / Auto-detection:** Reads page count immediately on upload
-- 🔢 **Sintaxis flexible / Flexible syntax:** Ranges (`1-5`), individual pages (`3`), mixed (`1-3, 5, 8-10`)
-- ⬇️ **Descarga automática / Auto-download:** Multiple files download with staggered 80–100ms intervals
-- 🔒 **Sin servidor / Zero server:** All processing via pdf-lib — your file never leaves your device
-- 📦 **Embebible / Embeddable:** Use as iframe on any website
+- **📐 Three modes:** Split by range, by every N pages or one file per page.
+- **🎯 Exact ranges:** Type page ranges like 1-5, 8, 12-20 and get one PDF per output.
+- **🔒 100% private:** Splitting runs locally with pdf-lib.
 
 ---
 
@@ -40,13 +34,12 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ```env
 NEXT_PUBLIC_SITE_URL=https://miguelacm.es/tools/pdf-split
+NEXT_PUBLIC_EMBED_URL=https://miguelacm.es/embed/pdf-split
 ```
 
 ---
 
 ## 📦 Embed on your website
-
-### Iframe (plug & play)
 
 ```html
 <iframe
@@ -63,11 +56,11 @@ NEXT_PUBLIC_SITE_URL=https://miguelacm.es/tools/pdf-split
 
 ```html
 <a href="https://miguelacm.es/tools/pdf-split" target="_blank" rel="noopener">
-  Dividir PDF gratis por MACM
+  PDF Split — free tool by MACM
 </a>
 ```
 
-> 💡 The link option generates a real backlink that benefits the project. Recommended if your platform supports custom HTML.
+> 💡 The link option generates a real backlink that benefits the project.
 
 ---
 
@@ -75,11 +68,11 @@ NEXT_PUBLIC_SITE_URL=https://miguelacm.es/tools/pdf-split
 
 | Technology | Version | Purpose |
 |---|---|---|
-| [Next.js](https://nextjs.org) | 16 | React framework + SSG |
+| [Next.js](https://nextjs.org) | 16 | React framework |
 | [TypeScript](https://www.typescriptlang.org) | 5 | Type safety |
 | [Tailwind CSS](https://tailwindcss.com) | 4 | Styling |
-| [pdf-lib](https://github.com/Hopding/pdf-lib) | 1 | PDF page extraction and splitting |
 | [react-icons](https://react-icons.github.io/react-icons/) | 5 | Icons |
+| `pdf-lib` | — | Core logic |
 
 ---
 

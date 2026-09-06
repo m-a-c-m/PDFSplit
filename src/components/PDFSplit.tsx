@@ -108,6 +108,7 @@ export default function PDFSplit({ locale = "es" }: Props) {
         }
 
       } else {
+        // extract: one PDF per page
         const indices = parsePageList(extractPages || `1-${pageCount}`, pageCount);
         if (!indices) {
           setError(isEs ? "Lista de páginas inválida." : "Invalid page list.");
